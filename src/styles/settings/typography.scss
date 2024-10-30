@@ -1,0 +1,25 @@
+@use "sass:math";
+
+/* ---------------------------------------------------
+font-size variables
+--------------------------------------------------- */
+$fs-large: 2rem;
+$fs-medium: 1.8rem;
+$fs-default: 1.6rem;
+$fs-small: 1.4rem;
+$fs-xsmall: 1.2rem;
+
+/* ---------------------------------------------------
+Mixin
+--------------------------------------------------- */
+@mixin font-size($size, $lineHeight: null, $fontWeight: null) {
+  font-size: $size;
+
+  @if $lineHeight {
+    line-height: #{math.div($lineHeight, 10)}rem;
+  }
+
+  @if $fontWeight {
+    font-weight: $fontWeight;
+  }
+}

@@ -1,0 +1,27 @@
+@use "../../styles/settings/colors" as *;
+@use "../../styles/settings/vars" as *;
+@use "../../styles/settings/breakpoints" as *;
+@use "../../styles/settings/typography" as *;
+
+/* ---------------------------------------------------
+Home styles
+--------------------------------------------------- */
+.c-pourqoi__edit-headline {
+  @include font-size($fs-large, 26, 800);
+
+  text-align: center;
+  margin: 20px 0;
+}
+
+.c-pourqoi__edit-form {
+  display: flex;
+  justify-content: center;
+}
+
+.c-pourqoi__edit-table {
+  margin-top: $padding;
+
+  @include bp(small) {
+    margin-top: $padding-large;
+  }
+}

@@ -1,0 +1,4 @@
+$max-width: 970px;
+$min-padding: 1rem;
+
+$content-margin: clamp($min-padding, 50vw - $max-width / 2, 100vw);

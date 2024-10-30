@@ -1,0 +1,31 @@
+@use "../../styles/settings/colors" as *;
+@use "../../styles/settings/typography" as *;
+
+table {
+  width: 100%;
+  text-align: center;
+  min-width: 700px;
+  color: $color-mirage;
+}
+
+th, td {
+  width: 10%;
+  padding: 10px 0;
+}
+
+th {
+  @include font-size($fs-default, $fontWeight: 600);
+}
+
+tr {
+  border-top: 4px solid $white;
+  background: $color-alto;
+
+  &:nth-child(even) {
+    background: $color-wild-sand;
+  }
+
+  thead & {
+    background: $color-wild-sand;
+  }
+}

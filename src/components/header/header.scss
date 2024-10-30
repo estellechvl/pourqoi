@@ -1,0 +1,29 @@
+@use "../../styles/settings/colors" as c;
+@use "../../styles/settings/vars" as *;
+
+/* ---------------------------------------------------
+Header styles
+--------------------------------------------------- */
+.c-pourqoi__header {
+  background: c.$color-mirage;
+  border-bottom: 1px solid c.$color-alto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.c-pourqoi__header-list {
+  display: flex;
+}
+
+.c-pourqoi__header-list-el {
+  padding-right: 15px;
+}
+
+.c-pourqoi__header-link {
+  color: c.$color-wild-sand;
+
+  &:hover,
+  &.is-active {
+    border-bottom: 1px solid c.$color-harlequin;
+  }
+}

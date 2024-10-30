@@ -1,0 +1,20 @@
+/* ===================================================
+BREAKPOINT SETTINGS (mobile-first approach)
+=================================================== */
+
+$bp-small: 600px;
+$bp-medium: 768px;
+$bp-large: 910px;
+
+@mixin bp($bp) {
+  @if $bp == small {
+    @media (min-width: $bp-small) { @content; }
+  }
+  @else if $bp == medium {
+    @media (min-width: $bp-medium) { @content; }
+  }
+  @else if $bp == large {
+    @media (min-width: $bp-large) { @content; }
+  }
+}
+

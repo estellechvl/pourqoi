@@ -1,0 +1,26 @@
+@use "../../styles/settings/colors" as *;
+@use "../../styles/settings/typography" as *;
+
+/* ---------------------------------------------------
+Home styles
+--------------------------------------------------- */
+.c-pourqoi__home-headline {
+  @include font-size($fs-large, 26, 800);
+
+  text-align: center;
+  margin: 20px 0;
+}
+
+.c-pourqoi__home-form {
+    display: flex;
+    justify-content: center;
+}
+
+.c-pourqoi__home-input {
+  padding: 15px 15px;
+  margin: 0 10px;
+}
+
+.c-pourqoi__home-submit {
+  flex: 0 1 150px;
+}

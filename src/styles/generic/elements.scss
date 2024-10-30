@@ -1,0 +1,25 @@
+@use "../../styles/settings/typography" as *;
+@use "../../styles/settings/vars" as *;
+
+/* ---------------------------------------------------
+Standard elements
+--------------------------------------------------- */
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: currentColor;
+  }
+}
+
+input {
+  @include font-size($fs-default, 21);
+
+  padding: 10px 15px;
+  margin: 0 $padding;
+}
+
