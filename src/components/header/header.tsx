@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
+import { ReactComponent as Logo } from '../../assets/images/logo.svg';
 
 function Header(): React.JSX.Element {
   const isActiveClass = (isActive: boolean): string => {
@@ -11,6 +12,9 @@ function Header(): React.JSX.Element {
 
   return (
     <header className="c-pourqoi__header">
+      <div className="c-pourqoi__header-logo">
+        <Logo className="c-pourqoi__header-logo-image" />
+      </div>
       <nav className="c-pourqoi__header-navigation">
         <ul className="c-pourqoi__header-list">
           <li className="c-pourqoi__header-list-el">
